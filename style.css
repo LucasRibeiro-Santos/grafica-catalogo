@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+.header__parent-navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 32px 12px 32px;
+    background-color: #0e0d14;
+}
+
+#header__nav-ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+#header__nav-ul a {
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #707074;
+
+    transition: 0.2s;
+}
+
+#header__nav-ul a:hover {
+    color: #a6a6ac;
+}
+
+#h1__logo {
+    color: white;
+
+}
+
+#span__logo {
+    font-weight: 100;
+
+}
+
+#div__hamburger-mobile {
+    display: none;
+}
+
+#header__div-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #1e1d22;
+    padding: 12px;
+}
+
+#search-bar {
+    width: 63%;
+    height: 32px;
+    padding: 7px;
+    padding-left: 16px;
+
+    border-radius: 0px;
+    border: 1px solid #606064;
+    background-color: #2e2d31;
+    color: #8a8a8a;
+    outline: none;
+}
+
+#btn__search {
+    cursor: pointer;
+    width: 72px;
+    height: 32px;
+
+    border: none;
+    background-color: #606064;
+    color: 1e1d22;
+    outline: none;
+    transition: 0.2s;
+}
+
+#btn__search:hover {
+    background-color: #707074;
+}
+
+#btn__search:active {
+    background-color: #606064;
+}
+
+/*media para mobile*/
+@media (max-width: 600px) {
+
+    #search-bar {
+        width: 80%;
+    }
+
+    .header__parent-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 32px 12px 32px;
+        background-color: #0e0d14;
+    }
+
+    .header__child-navbar {
+        display: none;
+    }
+
+    #div__hamburger-mobile {
+        display: block;
+    }
+
+    #hamburger-btn-mobile-1,
+    #hamburger-btn-mobile-2,
+    #hamburger-btn-mobile-3 {
+    display: block;
+    background-color: white;
+    padding: 2px;
+    width: 27px;
+    border-radius: 4px;
+    margin: 5px;
+    }
+
+    #header__btn-mobile {
+        display: block;
+    }
+
+    #header__nav-ul {
+        display: none;
+}
+}
+
