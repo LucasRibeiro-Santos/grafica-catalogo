@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e2e2e2;
+    background-color: #ebebeb;
 }
 
 .header__parent-navbar {
@@ -297,58 +297,71 @@ body {
 
 }
 
-/*produtos display grid*/
+/*card products*/
 
-.main__div-product {
-    display: grid;
-}
-
-.main__div-product-price {
-    background-color: white;
-    padding: 12px;
-    position: absolute;
-
-    width: 224px;
-    height: 330px;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 5px;
-
-    box-shadow: black 3px 3px 4px -5px ;
-}
-
-.img__product {
-    background-color: #808080;
-    height: 224px;
-    width: 224px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.main__div-product-price h3 {
-    color: #1b1b1b; 
-}
-
-.product__price {
-    font-size: 18px;
-    font-weight: 600;
-    color: #1b1b1b;
-}
-
-.main__div-product-price span {
-    font-size: 15px;
-    font-weight: 500;
-    color: green;
-}
-
-.btn__product {
+.main__card {
+    margin: 10px;
+    background-color: #fff;
+    border: solid 1px #d6d6d6;
     padding: 10px;
-    width: 12em;
-    border-radius: 7px;
-    border: none;
-    background-color: green ;
-    color: white;   
+    height: min-content;
+    width: 11rem;
+    display: grid;
+    border-radius: 12px;
+    transition: .4s;
+
 }
 
+.main__card:hover {
+    border: 1px white solid;
+    transform: translateY( -10px);
+    box-shadow: #0e0d141a 0 10px 5px -2px;
+
+}
+
+.card-header {
+    color: #272729;
+
+}
+
+.card-header span {
+    position: relative;
+    left: 8.5rem;
+    bottom: 2.3rem;
+    color: #d43232;
+
+}
+
+.car-header .card-img {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 12em;
+    width: 10em;
+
+}
+
+.card-img img {
+    text-align: center;
+    border-radius: 7px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.card-price {
+    margin-top: 10px;
+    font-size: 16pt;
+    font-weight: 600;
+    color: #272729;
+
+}
+
+.card-btn {
+    text-align: center;
+    padding: 10px;
+    height: 20px;
+    background-color: #d43232;
+    border-radius: 7px;
+}
